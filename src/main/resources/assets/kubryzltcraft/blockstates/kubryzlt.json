@@ -1,0 +1,30 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"model": "kubryzltcraft:kubryzlt",
+		"textures": {
+			"all": "kubryzltcraft:blocks/kubryzlt"
+		}
+	},
+	"variants": {
+		"normal": [{}],
+		"inventory": [{}],
+		"team": {
+			"0": {
+				"textures": {
+					"all": "kubryzltcraft:blocks/kubryzlt"
+				}
+			},
+			"1": {
+				"textures": {
+					"all": "kubryzltcraft:blocks/crimson_kubryzlt"
+				}
+			},
+			"2": {
+				"textures": {
+					"all": "kubryzltcraft:blocks/gold_kubryzlt"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "kubryzltcraft",
+  "name": "Kubryzltcraft",
+  "description": "Kubryzlts.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "io.github.zandyisrad",
+  "updateUrl": "",
+  "authorList": ["Eisoptrophobia_"],
+  "credits": "Eisoptrophobia_ made the code. EWF323 made some of the textures. The key texture was from an unknown person on the internet.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
