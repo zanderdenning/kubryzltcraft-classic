@@ -16,7 +16,14 @@ public class KeyDropHandler {
 		Entity source = event.getSource().getTrueSource();
 		if (entity instanceof EntityPlayer || entity instanceof EntityPlayerMP) {
 			if (source instanceof EntityPlayer || source instanceof EntityPlayerMP) {
-				entity.dropItem(ModItems.KUBRYZLT_KEY, 1);
+				if (!(entity.getTeam() == null)) {
+					if (!(entity.getTeam().equals(source.getTeam()))) {
+						entity.dropItem(ModItems.KUBRYZLT_KEY, 1);
+					}
+				}
+				else {
+					entity.dropItem(ModItems.KUBRYZLT_KEY, 1);
+				}
 			}
 		}
 	}

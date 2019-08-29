@@ -60,7 +60,9 @@ public class BlockKubryzlt extends Block implements ITileEntityProvider {
 					String savedName = getTE(worldIn, pos).getName();
 					TextComponentString announcement = new TextComponentString(TextFormatting.BLUE + "[CAPTURE]" + TextFormatting.WHITE + " " + playerIn.getName() + " captured " + getTE(worldIn, pos).getName() + " for " + TextFormatting.DARK_RED + "Crimson");
 					worldIn.getMinecraftServer().getPlayerList().sendMessage(announcement);
-					playerIn.inventory.setInventorySlotContents(playerIn.inventory.currentItem, ItemStack.EMPTY);
+					if (!(playerIn.capabilities.isCreativeMode)) {
+						playerIn.inventory.setInventorySlotContents(playerIn.inventory.currentItem, ItemStack.EMPTY);
+					}
 					worldIn.setBlockState(pos, state.withProperty(TEAM, 1));
 					getTE(worldIn, pos).setName(savedName);
 					
@@ -85,7 +87,9 @@ public class BlockKubryzlt extends Block implements ITileEntityProvider {
 					String savedName = getTE(worldIn, pos).getName();
 					TextComponentString announcement = new TextComponentString(TextFormatting.BLUE + "[CAPTURE]" + TextFormatting.WHITE + " " + playerIn.getName() + " captured " + getTE(worldIn, pos).getName() + " for " + TextFormatting.GOLD + "Gold");
 					worldIn.getMinecraftServer().getPlayerList().sendMessage(announcement);
-					playerIn.inventory.setInventorySlotContents(playerIn.inventory.currentItem, ItemStack.EMPTY);
+					if (!(playerIn.capabilities.isCreativeMode)) {
+						playerIn.inventory.setInventorySlotContents(playerIn.inventory.currentItem, ItemStack.EMPTY);
+					}
 					worldIn.setBlockState(pos, state.withProperty(TEAM, 2));
 					getTE(worldIn, pos).setName(savedName);
 					
