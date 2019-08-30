@@ -36,6 +36,7 @@ public class BlockKubryzlt extends Block implements ITileEntityProvider {
 		setRegistryName("kubryzlt");
 		setBlockUnbreakable();
 		setLightLevel(1f);
+		setResistance(18000000);
 	}
 	
 	@SideOnly(Side.CLIENT)
@@ -108,7 +109,6 @@ public class BlockKubryzlt extends Block implements ITileEntityProvider {
 						}
 					}
 					newData.setTag("kubryzlts", newDataList);
-					playerIn.sendMessage(new TextComponentString(newData.toString()));
 					data.setKubryzltData(newData);
 				}
 			}

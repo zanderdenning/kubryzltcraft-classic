@@ -22,7 +22,7 @@ import org.apache.logging.log4j.LogManager;
 public class Kubryzltcraft {
     public static final String MODID = "kubryzltcraft";
     public static final String NAME = "Kubryzltcraft";
-    public static final String VERSION = "1.1";
+    public static final String VERSION = "1.2";
     public static final String MC_VERSION = "[1.12.2]";
     
     @SidedProxy(clientSide = "io.github.zandyisrad.kubryzltcraft.proxy.ClientProxy", serverSide = "io.github.zandyisrad.kubryzltcraft.proxy.ServerProxy")
