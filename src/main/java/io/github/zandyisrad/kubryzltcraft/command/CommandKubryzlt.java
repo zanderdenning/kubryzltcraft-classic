@@ -30,6 +30,11 @@ public class CommandKubryzlt extends CommandBase {
 	}
 	
 	@Override
+	public boolean checkPermission(MinecraftServer server, ICommandSender sender) {
+		return true;
+	}
+	
+	@Override
 	public void execute(@Nonnull MinecraftServer server, @Nonnull ICommandSender sender, @Nonnull String[] args) throws CommandException {
 		try {
 			KWorldSavedData data = KWorldSavedData.get(sender.getEntityWorld());
