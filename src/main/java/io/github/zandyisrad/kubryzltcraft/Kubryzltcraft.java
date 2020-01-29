@@ -1,5 +1,6 @@
 package io.github.zandyisrad.kubryzltcraft;
 
+import io.github.zandyisrad.kubryzltcraft.command.CommandDimensionTp;
 import io.github.zandyisrad.kubryzltcraft.command.CommandKubryzlt;
 import io.github.zandyisrad.kubryzltcraft.command.CommandKubryzltCreate;
 import io.github.zandyisrad.kubryzltcraft.command.CommandKubryzltRemove;
@@ -22,7 +23,7 @@ import org.apache.logging.log4j.LogManager;
 public class Kubryzltcraft {
     public static final String MODID = "kubryzltcraft";
     public static final String NAME = "Kubryzltcraft";
-    public static final String VERSION = "1.3";
+    public static final String VERSION = "1.4";
     public static final String MC_VERSION = "[1.12.2]";
     
     @SidedProxy(clientSide = "io.github.zandyisrad.kubryzltcraft.proxy.ClientProxy", serverSide = "io.github.zandyisrad.kubryzltcraft.proxy.ServerProxy")
@@ -53,6 +54,7 @@ public class Kubryzltcraft {
     	event.registerServerCommand(new CommandKubryzltCreate());
     	event.registerServerCommand(new CommandKubryzlt());
     	event.registerServerCommand(new CommandKubryzltRemove());
+    	event.registerServerCommand(new CommandDimensionTp());
     }
     
     @EventHandler
